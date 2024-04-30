@@ -1,5 +1,11 @@
 import Navbar from "../components/Navbar";
 
+export const metadata = {
+  title: "SHM page",
+  description: "This is the Home page of SHM website",
+  keywords: "tienda, online, ecomerce, comprar",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -7,9 +13,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>SHM pgae</title>
-      </head>
       <body>
         <Navbar />
         {children}
