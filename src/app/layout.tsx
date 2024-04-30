@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RootLayout({
   children,
 }: {
@@ -9,7 +11,17 @@ export default function RootLayout({
         <title>SHM pgae</title>
       </head>
       <body>
-        <nav>Navbar o header</nav>
+        <nav>
+          Navbar
+          <ul>
+            <li>
+              <a href={"/"}>Home</a>
+            </li>
+            <li>
+              <Link href={"/someshi"}>Someshitte</Link>
+            </li>
+          </ul>
+        </nav>
         {children}
       </body>
     </html>
