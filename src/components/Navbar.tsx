@@ -14,6 +14,9 @@ export default function Navbar() {
         <li>
           <Link href={"/movies"}>Movies Section</Link>
         </li>
+        <li>
+          <Link href={"/posts"}>Posts Section</Link>
+        </li>
       </ul>
     </nav>
   );
